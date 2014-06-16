@@ -1,7 +1,8 @@
 jquery-dragable
 ===============
 __obs:__ este repo. está totalmento em [pt-Br](http://pt.wikipedia.org/wiki/Portugu%C3%AAs_brasileiro), já que as vezes encontro com alguns desenvolvedores que dizem ser um pouco difícil encontrar conteúdo em nosso idioma.<br />
-Crie um objeto que possa ser arrastando e soltando em uma outra parte do site de uma forma simples. Foi uma das formas mais simples que eu encontrei de fazer, então espero ajudar.
+
+<br  />Crie um objeto que possa ser arrastando e soltando em uma outra parte do site de uma forma simples. Foi uma das formas mais simples que eu encontrei de fazer, então espero ajudar.
 
 Arquivos
 ========
