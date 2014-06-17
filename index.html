@@ -34,7 +34,7 @@
                 <section class="col-md-6">
                     <div class="panel panel-primary">
                         <div class="panel-heading ">Carrinho</div>
-                            <div class="panel-body carrinho" id="carrinho">
+                            <div class="panel-body" id="carrinho">
 
                             </div>
                     </div>
@@ -51,28 +51,24 @@
                 </section>
             </div>
         </div>-->
+    
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.min.js" ></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".item").draggable({
+                    helper: 'clone'
+                });
+                
+                $("#carrinho").droppable({
+                    accept:".item",
+                    drop:function(event, ui){
+                        var itemComprado = $(ui.draggable.clone);
+                        $(this).append(itemComprado), 
+                        alert('Mensagem....');
+                    } 
+                });
+            });
+        </script>
     </body>
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
-    <script type="text/javascript" src="js/jquery-ui.js" ></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".item").draggable({
-                helper: 'clone'
-            });
-            
-            $("#carrinho").droppable({
-                accept:".item",
-              
-                drop:function(event, ui){
-                    
-                    var itemComprado = $(ui.draggable.clone);
-                    $(this).append(itemComprado),
-                    alert ("Esta é uma caixa de diálogo ALERT do JavaScript!");
-                    
-                } 
-            });
-            
-        });
-        
-    </script>
 </html>

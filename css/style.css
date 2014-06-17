@@ -20,10 +20,12 @@
 }
 
 #carrinho {
+    z-index: -1;
     height: 310px;
 }
 
 .item {
+    z-index: 1;
     list-style: none;
     padding: 10px;
     font-size: 18px;
