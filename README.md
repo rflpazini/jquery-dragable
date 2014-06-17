@@ -38,8 +38,6 @@ Para que você entenda o que acontece, tudo é comandado por esta função, ela 
                     } 
                 });
             });
-
-      
 ```
 
 O resto é feito pelos arquivos Js que foram adicionados no Html.
@@ -50,7 +48,5 @@ Esta função habilita o carrinho para receber os itens e assim que o evento de 
 * De um fork
 * Faça um Pull Request
 
-Por enquanto é isso. 
-
-[@RafaelPazini](http://twitter.com/RafaelPazini)
+Por enquanto é isso. [@RafaelPazini](http://twitter.com/RafaelPazini)
 
