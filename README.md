@@ -18,7 +18,34 @@ Você vai encontrar os seguintes arquivos no projeto:<br />
   * bootstrap.css
   * style.css
 
+Setup
+====
 
+Para que você entenda o que acontece, tudo é comandado por esta função, ela está dentro do arquivo html:
 
+```javascript
+			$(document).ready(function(){
+                $(".item").draggable({
+                    helper: 'clone'
+                });
+                
+                $("#carrinho").droppable({
+                    accept:".item",
+                    drop:function(event, ui){
+                        var itemComprado = $(ui.draggable.clone);
+                        $(this).append(itemComprado), 
+                        alert('Mensagem....');
+                    } 
+                });
+            });
+```
+O resto é feito pelos arquivos Js que foram adicionados no Html.
+Esta função habilita o carrinho para receber os itens e assim que o evento de clique é efetuado, ela clona o item que foi clicado e libera para que o mesmo seja adicionado dentro do carrinho. Assim que o item é soltado dentro do carrinho, o mesmo é desabilitado para ser arrastado. <br />
 
+### Quer contribuir? Alguma dica para melhorar o código? ###
 
+* De um fork
+* Faça um Pull Request
+
+Por enquanto é isso. 
+[@RafaelPazini](http://twitter.com/RafaelPazini)
